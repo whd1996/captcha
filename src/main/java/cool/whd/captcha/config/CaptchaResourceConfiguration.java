@@ -1,4 +1,4 @@
-package cloud.tianai.captcha.demo;
+package cool.whd.captcha.config;
 
 import cloud.tianai.captcha.common.constant.CaptchaTypeConstant;
 import cloud.tianai.captcha.resource.ResourceStore;

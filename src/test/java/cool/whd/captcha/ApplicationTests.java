@@ -1,10 +1,10 @@
-package cloud.tianai.captcha.demo;
+package cool.whd.captcha;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TianaiCaptchaDemoApplicationTests {
+class ApplicationTests {
 
     @Test
     void contextLoads() {

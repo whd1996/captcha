@@ -1,4 +1,4 @@
-package cloud.tianai.captcha.demo;
+package cool.whd.captcha;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
@@ -9,10 +9,10 @@ import org.springframework.stereotype.Controller;
 @Slf4j
 @Controller
 @SpringBootApplication
-public class TianaiCaptchaDemoApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(TianaiCaptchaDemoApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }
