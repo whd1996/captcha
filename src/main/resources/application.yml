@@ -1,6 +1,12 @@
 server:
   port: 8080
 spring:
+  # 数据库连接配置
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: "123456"
+    driver-class-name: com.mysql.cj.jdbc.Driver
   thymeleaf:
     cache: false
     prefix: classpath:/templates/
@@ -22,3 +28,4 @@ cors:
   controlAllowHeaders: "*"
   controlAllowMethods: "*"
   controlAllowOrigin: "*"
+

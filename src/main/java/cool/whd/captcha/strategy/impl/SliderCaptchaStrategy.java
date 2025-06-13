@@ -1,0 +1,26 @@
+package cool.whd.captcha.strategy.impl;
+
+import cloud.tianai.captcha.application.ImageCaptchaApplication;
+import cloud.tianai.captcha.application.vo.CaptchaResponse;
+import cloud.tianai.captcha.application.vo.ImageCaptchaVO;
+import com.alibaba.fastjson2.JSON;
+import cool.whd.captcha.constant.StrategyTypeNum;
+import cool.whd.captcha.strategy.CaptchaStrategy;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
+
+import java.util.Map;
+
+@Slf4j
+@Component
+public class SliderCaptchaStrategy implements CaptchaStrategy {
+
+    @Override
+    public CaptchaResponse<ImageCaptchaVO> generateCaptcha(ImageCaptchaApplication imageCaptchaApplication, Map<String,  Object> paramMap) {
+        log.info("SliderCaptchaStrategy generateCaptcha type:{}", StrategyTypeNum.SLIDER);
+        log.info("其他{}业务逻辑参数{}",StrategyTypeNum.SLIDER.getDesc(), JSON.toJSONString(paramMap));
+        //TO DO 不同的处理写在这里
+        return generateCaptcha(StrategyTypeNum.SLIDER.name(),imageCaptchaApplication);
+    }
+}
+
