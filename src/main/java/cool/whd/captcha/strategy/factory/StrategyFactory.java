@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class StrategyFactory {
 
     @Autowired
-    private Map<String, CaptchaStrategy> captchaStrategyMap=new ConcurrentHashMap<>();
+    private Map<String, CaptchaStrategy> captchaStrategyMap;
 
     public CaptchaStrategy getStrategy(String strategyName) {
         return captchaStrategyMap.get(strategyName);
